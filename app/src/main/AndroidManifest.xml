@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.co.kangnam.date">
+
+    <application
+        android:allowBackup="true"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:icon="@drawable/piggybank"
+        android:label="데이트 가계부"
+        android:roundIcon="@drawable/piggybank"
+        android:supportsRtl="true">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".RecentActivity"/>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".ToghterActivity"/>
+        <activity android:name=".InputActivity"/>
+        <activity android:name=".LogoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+</manifest>

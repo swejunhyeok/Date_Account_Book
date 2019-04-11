@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#4673B6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/layout_form"
+        android:id="@+id/layout_Form"/>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></LinearLayout>
+        <ImageView
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gender"/>
+        <TextView
+            style="@style/CodeFont"
+            android:textSize="25sp"
+            android:gravity="center_vertical"
+            android:text="자신의 성별"
+            android:inputType="number"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></LinearLayout>
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:id="@+id/man"
+                style="@style/CodeFont"
+                android:text="  남자"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></RadioButton>
+            <RadioButton
+                android:id="@+id/woman"
+                style="@style/CodeFont"
+                android:text="  여자"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></RadioButton>
+        </RadioGroup>
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></LinearLayout>
+        <ImageView
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/phone"/>
+        <TextView
+            style="@style/CodeFont"
+            android:textSize="25sp"
+            android:gravity="center_vertical"
+            android:text="연동할 사용자 번호"
+            android:inputType="number"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></LinearLayout>
+        <EditText
+            android:id="@+id/phoneNum"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            style="@style/CodeFont"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/editback"/>
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></LinearLayout>
+        <Button
+            android:id="@+id/sendBtn"
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/buttonbg"
+            style="@style/CodeFont"
+            android:textColor="#000000"
+            android:text="연동 신청"/>
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></LinearLayout>
+    </LinearLayout>
+</LinearLayout>

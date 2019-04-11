@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#4673B6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/layout_form"
+        android:id="@+id/layout_Form"/>
+
+    <include
+        layout="@layout/d_day_form"
+        android:id="@+id/d_Day_Form"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"></LinearLayout>
+        <kr.co.kangnam.date.MyView
+            android:id="@+id/myview"
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:layout_height="25dp" />
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"></LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/leftarrow"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/leftarrow2"/>
+        <TextView
+            style="@style/CodeFont"
+            android:id="@+id/tv_date"
+            android:text="날짜다이놈아아"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:textSize="30sp"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/rightarrow"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/rightarrow2"/>
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#FFFFFF"/>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:gravity="bottom|right"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/edit"/>
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/delete"/>
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/add"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/add"/>
+    </LinearLayout>
+
+    <include
+        layout="@layout/menu_form"
+        android:id="@+id/menu_Form"/>
+</LinearLayout>

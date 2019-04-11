@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="30dp"
+    android:background="#4673B6"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:layout_height="75dp">
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/man"/>
+</LinearLayout>

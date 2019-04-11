@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_item_gridview"
+        android:layout_width="wrap_content"
+        style="@style/CodeFont"
+        android:textColor="#ffffff"
+        android:layout_height="20dp"
+        android:textSize="12sp" />
+    <TextView
+        android:layout_gravity="right"
+        style="@style/CodeFont"
+        android:id="@+id/tv_earn_gridview"
+        android:layout_width="wrap_content"
+        android:textColor="#0000ff"
+        android:layout_height="15dp"
+        android:textSize="10sp"/>
+    <TextView
+        android:layout_gravity="right"
+        style="@style/CodeFont"
+        android:id="@+id/tv_spend_gridview"
+        android:layout_width="wrap_content"
+        android:textColor="#ff0000"
+        android:layout_height="15dp"
+        android:textSize="10sp"/>
+
+</LinearLayout>

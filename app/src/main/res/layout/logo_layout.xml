@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#4673B6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></LinearLayout>
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/coin"/>
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></LinearLayout>
+    <TextView
+        style="@style/CodeFont"
+        android:textSize="50sp"
+        android:gravity="center_horizontal"
+        android:text="데이트 가계부"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_weight="0.25"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></LinearLayout>
+    <TextView
+        style="@style/CodeFont"
+        android:gravity="center_horizontal"
+        android:text="커플들의 똑똑한 소비 생활"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_weight="2.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></LinearLayout>
+</LinearLayout>
